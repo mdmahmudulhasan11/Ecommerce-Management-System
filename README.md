@@ -1,6 +1,4 @@
-**E-Commerce Management System  
-  
-**
+
 
 **1\. Project Overview**
 
@@ -95,6 +93,4 @@ UPDATE users SET user\_type='admin' WHERE email='YOUR\_EMAIL\_HERE';
 
 ·        Images not showing: Ensure images are stored in img/ and the PHP code points to the correct image path.
 
-**9\. License**
 
-Educational purpose. Add an MIT License (optional) if you plan to publish publicly.
