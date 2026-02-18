@@ -1,0 +1,50 @@
+.a{
+                    
+    position: fixed;
+    top: 0; Left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    background: var(--orange); 
+    z-index: 1100;
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    flex-direction: column;
+    }
+    .a form{
+        box-shadow: var(--box-shadow);
+        width: 50%;
+        background: #f3efef;
+        padding: 1rem;
+        margin: 2rem auto;
+       
+        text-align: center;
+        font-size: 40px;
+        }   
+    .a .edit,
+    .a .btn{
+        width: 40%;
+        cursor: pointer;
+        }
+
+    .a form img{
+            width: 60%;
+
+        }
+
+        .empty {
+            text-align: center;
+            text-transform: capitalize;
+            margin: 0 auto 2rem;
+            width: 59%;
+            padding: 0.5rem 1.5rem;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            background: #000;
+            color: #fff;
+            cursor: pointer; 
+        }

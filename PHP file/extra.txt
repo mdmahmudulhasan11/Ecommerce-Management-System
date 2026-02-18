@@ -1,0 +1,138 @@
+//update product
+if (isset($_POST['updte_product'])) { 
+    $update_id = $_POST['update_id']; 
+    $update_name = $_POST['update_name']; 
+    $update_price = $_POST['update_price']; 
+    $update_detail = $_POST['update_detail'];
+   
+    $update_image = $_FILES['update_image']['name'];
+    $update_image_tmp_name = $_FILES['update_image']['tmp_name']; 
+    $update_image_folder='images/'.$update_image;
+    $update_query = mysqli_query($conn, "UPDATE `products` SET `id`='$update_id',`name` = '$update_name', `price`='$ update_price', `product_detail`='$update_detail',`image`='$update_image' WHERE id = '$update_id'") or die ('query failed');
+    if($update_query) {
+    move_uploaded_file($update_image_tmp_name, $update_image_folder);
+    header('location: admin_product.php');
+    }
+}
+
+
+
+
+.add-products{
+    margin-top: -3.5rem;
+height: auto;
+background: #f5f5f5;
+position: relative;
+}
+
+.show-products{
+    position: relative;
+    background: var(--orange);
+    margin-top: -3.5rem;
+}
+.show-products::before{
+    background-image: url('img/logo.jpg');
+    top: -100px;
+}
+
+
+show-products .box-container{
+grid-template-columns: repeat (auto-fit, minmax (20rem, 1fr));
+}
+
+.box-container .box h4 {
+    text-transform: capitalize; /* Capitalizes the first letter of each word */
+}
+
+.box-container .box img{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.edit, .delete{
+    color: black;
+    background: var(--orange); padding: .5rem 1.5rem;
+    text-transform: capitalize; 
+    Line-height: 2;
+    }
+    
+    .update-container{
+        position: fixed;
+        top: 0; Left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        overflow-y: auto;
+        background: var(--orange); z-index: 1100;
+        padding: 2rem;
+        align-items: center;
+        justify-content: center;
+        display: none;
+        flex-direction: column;
+        }
+
+        .update-container form{
+            box-shadow: var(--box-shadow);
+            width: 50%;
+            background: #fff;
+            padding: 1rem;
+            margin: 2rem auto;
+            text-align: center;
+            }
+            .update-container .edit,
+            .update-container .btn{
+            width: 40%;
+            cursor: pointer;
+            }
+            .update-container form img{
+                width: 60%;
+
+            }
+           
+           
+
+.self{
+    background-image: url('img/b.jpg');
+    background-size: cover; /* Ensures the image covers the entire page */
+    background-repeat: no-repeat;
+   
+}
+
+
+
+
+
+  .a{
+                    
+                    position: fixed;
+                    top: 0; Left: 0;
+                    right: 0;
+                    height: 100%;
+                    width: 100%;
+                    overflow-y: auto;
+                    background: var(--orange); 
+                    z-index: 1100;
+                    padding: 2rem;
+                    align-items: center;
+                    justify-content: center;
+                    display: flex;
+                    flex-direction: column;
+                    }
+                    .a form{
+                        box-shadow: var(--box-shadow);
+                        width: 50%;
+                        background: #f3efef;
+                        padding: 1rem;
+                        margin: 2rem auto;
+                        text-align: center;
+                        font-size: 40px;
+                        }   
+                    .a .edit,
+                    .a .btn{
+                        width: 40%;
+                        cursor: pointer;
+                        }
+
+                    .a form img{
+                            width: 60%;
+
+                        }
