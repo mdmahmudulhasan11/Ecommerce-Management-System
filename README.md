@@ -1,42 +1,41 @@
-# **E-Commerce Management System** 
+# E-Commerce Management System 🛒
 
-A web-based application for managing an online store. It provides customer-facing pages to browse products with basic authentication, and an admin panel to manage products, users, orders, and customer messages.
+A web-based application for managing an online store. It includes customer-facing pages to browse products with basic authentication, and an admin panel to manage products, users, orders, and customer messages.
 
 ---
 
-##  Project Overview
-
-**E-Commerce Management System** E-Commerce Management System is a web based application for managing an online store. It provides customer-facing pages to browse products and basic authentication features, and an admin panel to manage products, users, orders, and customer messages.
-
+## Project Overview
+**E-Commerce Management System** is a PHP + MySQL web application designed for learning and small demo projects. It provides:
+- Customer pages to register/login, browse products, and use cart/wishlist flows
+- Admin tools to manage products, users, orders, and customer messages
 
 ---
 
 ## Key Features
 
-### 👤 Customer Side
-- User registration and login/logout  
-- Product listing and product details page  
-- Basic cart / wishlist flow  
+### Customer Side
+- User registration and login/logout
+- Product listing and product details page
+- Basic cart / wishlist flow
 
 ### Admin Side
-- Admin dashboard  
-- Add / update / delete products  
-- View and manage users  
-- View orders and update payment status  
-- View and delete customer messages  
+- Admin dashboard
+- Add / update / delete products
+- View and manage users
+- View orders and update payment status
+- View and delete customer messages
 
 ---
 
-##  Technology Stack
-- **Frontend:** HTML, CSS, Bootstrap, JavaScript  
-- **Backend:** PHP  
-- **Database:** MySQL / MariaDB  
-- **Local Server:** XAMPP / WAMP / Laragon (Apache + PHP + MySQL)  
+## Technology Stack
+- **Frontend:** HTML, CSS, Bootstrap, JavaScript
+- **Backend:** PHP
+- **Database:** MySQL / MariaDB
+- **Local Server:** XAMPP / WAMP / Laragon (Apache + PHP + MySQL)
 
 ---
 
-##  Folder Structure
-
+## Folder Structure
 ```text
 project-root/
   php/        - PHP pages and backend logic
@@ -44,6 +43,7 @@ project-root/
   css/        - Stylesheets
   img/        - Images (product images, UI assets)
   database/   - SQL file(s) for database setup
+
 
 
 
