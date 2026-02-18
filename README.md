@@ -56,6 +56,8 @@ Copy the ecommerceshop folder into:
 C:\xampp\htdocs\
 Your project should be accessible at:
 http://localhost/ecommerceshop/
+
+
 2) Admin Access
 To access admin features, the user record in the users table must have user_type = 'admin'.
 1.	Register a normal user first.
@@ -63,7 +65,10 @@ To access admin features, the user record in the users table must have user_type
 UPDATE users
 SET user_type = 'admin'
 WHERE email = 'YOUR_EMAIL_HERE';
-Troubleshooting
+
+
+
+3) Troubleshooting
 •	Connection failed: Make sure MySQL is running, the database name is shop_db, and credentials in connection.php are correct.
 •	CSS/JS not loading: Verify folder names (css/, js/) and relative paths used in your PHP pages.
 •	Images not showing: Ensure images are stored in img/ and the PHP code points to the correct image path.
