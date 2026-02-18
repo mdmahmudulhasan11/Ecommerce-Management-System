@@ -47,52 +47,27 @@ project-root/
 
 
 
-## Key Features
-### Customer Side:
-•	User registration and login/logout
-•	Product listing and product details page
-•	Basic cart/wishlist flow 
-
-### Admin Side:
-•	Admin dashboard
-•	Add / update / delete products
-•	View and manage users
-•	View orders and update payment status
-•	View and delete customer messages
-
-## Technology Stack
-•	Frontend: HTML, CSS, Bootstrap, JavaScript
-•	Backend: PHP
-•	Database: MySQL / MariaDB
-•	Local Server: XAMPP / WAMP / Laragon (Apache + PHP + MySQL)
-
-## Folder Structure
-### project-root/
-  php/        - PHP pages and backend logic
-  js/         - JavaScript files
-  css/        - Stylesheets
-  img/        - Images (product images, UI assets)
-  database/   - SQL file(s) for database setup
 
 
-
-## Installation & Setup
-Move Project into Web Root
-Example for XAMPP:
+Installation & Setup
+1) Move Project into Web Root
+Example (XAMPP):
 Copy the ecommerceshop folder into:
 C:\xampp\htdocs\
-Your project should be accessible like:
+Your project should be accessible at:
 http://localhost/ecommerceshop/
-
-## Admin Access
-To access admin features, the user record in the users table must have user_type = 'admin'. Register a normal user first, then run the following SQL in phpMyAdmin:
-UPDATE users SET user_type='admin' WHERE email='YOUR_EMAIL_HERE';
-
-## Troubleshooting
+2) Admin Access
+To access admin features, the user record in the users table must have user_type = 'admin'.
+1.	Register a normal user first.
+2.	Then run the following SQL in phpMyAdmin:
+UPDATE users
+SET user_type = 'admin'
+WHERE email = 'YOUR_EMAIL_HERE';
+Troubleshooting
 •	Connection failed: Make sure MySQL is running, the database name is shop_db, and credentials in connection.php are correct.
 •	CSS/JS not loading: Verify folder names (css/, js/) and relative paths used in your PHP pages.
 •	Images not showing: Ensure images are stored in img/ and the PHP code points to the correct image path.
-
-
-## License
+License
 Educational purpose. Add an MIT License (optional) if you plan to publish publicly.
+Next Step
+Would you like me to create the SQL schema for your database/ folder or help you write the connection.php file?
